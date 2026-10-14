@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover beautiful destinations, local culture, and unforgettable adventures in the Philippines.">
+  <title>Lakbay Pilipinas | Explore the Philippines</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Lakbay Pilipinas home"><span class="brand-mark">✦</span> Lakbay<span>Pilipinas</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Plan a Trip</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+        <h1>Find your own<br><em>island story.</em></h1>
+        <p class="hero-copy">Discover the Philippines through its turquoise waters, breathtaking landscapes, rich culture, and warm-hearted people.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#destinations">Explore destinations <span>↗</span></a>
+          <a class="text-link" href="#about">Get to know us <span>→</span></a>
+        </div>
+        <div class="hero-note"><span class="pulse"></span> More than 7,000 islands to discover</div>
+      </div>
+      <div class="hero-caption">PHILIPPINES · ISLANDS OF WONDER</div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div>
+        <p class="eyebrow dark-eyebrow">A LITTLE PARADISE</p>
+        <h2>Big adventures.<br><em>Beautiful memories.</em></h2>
+      </div>
+      <p class="intro-text">Whether you want a quiet beach escape, a mountain adventure, or a taste of local culture, your next memorable journey is waiting in the Philippines.</p>
+    </section>
+
+    <section class="destinations section-wrap" id="destinations">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">WHERE TO GO</p><h2>Explore <em>destinations</em></h2></div>
+        <p>Handpicked places for your next getaway.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter destinations">
+        <button class="filter-btn active" data-filter="all">All places</button>
+        <button class="filter-btn" data-filter="beach">Beaches</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
+      </div>
+      <div class="destination-grid" id="destinationGrid">
+        <article class="destination-card" data-category="beach">
+          <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85" alt="Tropical beach with clear water">
+          <div class="card-content"><span class="card-tag">BEACH ESCAPE</span><h3>Boracay</h3><p>Powdery white sand and glowing sunsets.</p><a href="#contact" class="card-link" data-place="Boracay">Discover place <span>↗</span></a></div>
+        </article>
+        <article class="destination-card" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=85" alt="Lush green mountain landscape">
+          <div class="card-content"><span class="card-tag">NATURE & ADVENTURE</span><h3>Palawan</h3><p>Turquoise lagoons, limestone cliffs, and hidden coves.</p><a href="#contact" class="card-link" data-place="Palawan">Discover place <span>↗</span></a></div>
+        </article>
+        <article class="destination-card" data-category="culture">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=85" alt="Traditional architecture and local streets">
+          <div class="card-content"><span class="card-tag">HISTORY & CULTURE</span><h3>Vigan</h3><p>Heritage streets, historic homes, and local crafts.</p><a href="#contact" class="card-link" data-place="Vigan">Discover place <span>↗</span></a></div>
+        </article>
+        <article class="destination-card" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Dramatic mountain peaks under the sky">
+          <div class="card-content"><span class="card-tag">MOUNTAIN AIR</span><h3>Cordillera</h3><p>Cool mountain towns, rice terraces, and scenic trails.</p><a href="#contact" class="card-link" data-place="Cordillera">Discover place <span>↗</span></a></div>
+        </article>
+        <article class="destination-card" data-category="beach">
+          <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Ocean waves rolling toward the shore">
+          <div class="card-content"><span class="card-tag">SLOW TRAVEL</span><h3>Siargao</h3><p>Surf breaks, palm-lined roads, and laid-back island life.</p><a href="#contact" class="card-link" data-place="Siargao">Discover place <span>↗</span></a></div>
+        </article>
+        <article class="destination-card" data-category="culture">
+          <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85" alt="City architecture and lively urban destination">
+          <div class="card-content"><span class="card-tag">CITY DISCOVERY</span><h3>Cebu</h3><p>Island hopping, heritage landmarks, and Cebuano flavors.</p><a href="#contact" class="card-link" data-place="Cebu">Discover place <span>↗</span></a></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No destinations in this category yet. Try another filter.</p>
+    </section>
+
+    <section class="experience-band" id="experiences">
+      <div class="experience-image"></div>
+      <div class="experience-content">
+        <p class="eyebrow">TRAVEL YOUR WAY</p>
+        <h2>Not just places.<br><em>Feel the stories.</em></h2>
+        <p>Meet local communities, try regional dishes, explore nature responsibly, and take home memories that last longer than the trip.</p>
+        <ul class="experience-list">
+          <li><span>01</span> Island hopping & beach days</li>
+          <li><span>02</span> Food trips & local flavors</li>
+          <li><span>03</span> Heritage walks & cultural finds</li>
+        </ul>
+        <a class="button button-light" href="#contact">Start planning <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-stamp">TRAVEL<br>WITH<br>WONDER</div>
+      <div class="about-copy">
+        <p class="eyebrow dark-eyebrow">OUR STORY</p>
+        <h2>Made for curious<br><em>travelers.</em></h2>
+        <p>Lakbay Pilipinas is a travel inspiration website created to help visitors discover the beauty and diversity of the Philippines. We bring destination ideas, travel inspiration, and planning tips together in one welcoming place.</p>
+        <p class="small-note">Travel thoughtfully. Respect local communities, protect nature, and leave every place better than you found it.</p>
+      </div>
+      <img class="about-image" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1000&q=85" alt="Traveler enjoying a scenic natural landscape">
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">A NOTE FROM THE ISLANDS</p><h2>Get a little <em>travel inspiration.</em></h2><p>Sign up for destination ideas and helpful travel tips.</p></div>
+      <form id="newsletterForm" class="newsletter-form">
+        <label class="sr-only" for="newsletterEmail">Your email address</label>
+        <input id="newsletterEmail" type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Subscribe">Join us <span>→</span></button>
+        <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">LET'S PLAN SOMETHING GOOD</p><h2>Your trip begins <em>with a hello.</em></h2></div>
+        <p>Tell us what kind of getaway you have in mind.</p>
+      </div>
+      <form id="tripForm" class="trip-form">
+        <div class="form-field"><label for="visitorName">Your name</label><input id="visitorName" name="name" type="text" placeholder="Enter your name" required></div>
+        <div class="form-field"><label for="visitorEmail">Email address</label><input id="visitorEmail" name="email" type="email" placeholder="you@example.com" required></div>
+        <div class="form-field"><label for="tripDestination">Destination of interest</label><select id="tripDestination" name="destination" required><option value="">Choose a destination</option><option>Boracay</option><option>Palawan</option><option>Vigan</option><option>Cordillera</option><option>Siargao</option><option>Cebu</option><option>Not sure yet</option></select></div>
+        <div class="form-field"><label for="tripStyle">Your travel style</label><select id="tripStyle" name="style" required><option value="">Choose a travel style</option><option>Beach and relaxation</option><option>Nature and adventure</option><option>Food and culture</option><option>Family trip</option><option>Solo travel</option></select></div>
+        <div class="form-field full-field"><label for="tripMessage">Tell us a little more</label><textarea id="tripMessage" name="message" rows="4" placeholder="When would you like to travel? What would you love to see?"></textarea></div>
+        <button class="button button-primary submit-button" type="submit">Send trip inquiry <span>↗</span></button>
+        <p id="tripMessageStatus" class="form-message full-field" aria-live="polite"></p>
+      </form>
+      <p class="demo-notice">Demo website: forms show an on-page confirmation only. Connect a backend or form service to receive submissions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span> Lakbay<span>Pilipinas</span></a>
+    <p>Made with love for the places that make us feel at home.</p>
+    <div class="footer-links"><a href="#destinations">Destinations</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <small>© <span id="year"></span> Lakbay Pilipinas. Student demo project.</small>
+  </footer>
+</body>
+</html>
